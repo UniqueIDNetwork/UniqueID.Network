@@ -65,6 +65,14 @@ body {
   margin-top: 1.5rem;
 }
 
+#logo {
+    width: 100%;
+    max-width: 310px;
+    height: auto;
+    padding: auto;
+    justify-content: center;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 48em) {
   /* Remove the padding we set earlier */
@@ -82,4 +90,11 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/* Fix issues with IPhone 5/SE*/
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 0.85em;
+    }
 }
